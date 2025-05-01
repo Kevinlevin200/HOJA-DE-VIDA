@@ -1,0 +1,118 @@
+/* Fuente personalizada */
+@font-face {
+    font-family: 'MiTipografia'; 
+    src: url('fuentes/Eczar-Regular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'MiTipografia';
+    background-color: #f0f4f8;
+    color: #2c3e50;
+}
+
+/* Paleta de colores */
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #2c3e50;
+    --color-fondo: #ffffff;
+    --color-hover: #ecf0f1;
+}
+
+header {
+    background-color: var(--color-secundario);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+header img {
+    width: 120px;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+.perfil {
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    background-color: var(--color-fondo);
+    border-left: 5px solid var(--color-primario);
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    background-color: var(--color-hover);
+    transform: translateY(-3px);
+}
+
+h2 {
+    color: var(--color-primario);
+    margin-top: 0;
+}
+
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1a6fa5;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--color-secundario);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    animation: aparecer 2s ease-in;
+}
+
+/* Animación con keyframes */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
