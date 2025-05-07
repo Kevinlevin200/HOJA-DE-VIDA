@@ -133,6 +133,6 @@ img {
 h1 {
     text-align: center;          /* Centra el título */
     font-size: 24px;             /* Tamaño de la fuente */
-    color: var(--color-secundario); /* Color del título */
+    color: #ffffff; /* Color del título */
     margin-top: 20px;            /* Espacio encima del título */
 }
